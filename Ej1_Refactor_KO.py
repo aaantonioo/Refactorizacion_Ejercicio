@@ -73,8 +73,9 @@ def main():
     if opcion == '1':
         mostrar_vuelos_disponibles(vuelos)
     elif opcion == '2':
-
-        pass
+        pasajero = obtener_datos_pasajero()
+        numero, cantidad = obtener_datos_reserva()
+        reservar_vuelo(vuelos, numero, pasajero, cantidad)
     else:
         print("Opción no válida.")
 
